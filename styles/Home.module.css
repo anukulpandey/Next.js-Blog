@@ -40,7 +40,7 @@
 }
 
 .title {
-  margin: 0;
+  margin-bottom: 46!important;
   line-height: 1.15;
   font-size: 4rem;
 }
@@ -113,4 +113,19 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.navBar{
+  display: flex;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+  margin-top: 20px;
+  justify-content: center;
+  
+}
+
+.navBar li{
+  padding: 12px;
+  list-style: none;
 }
