@@ -2,14 +2,10 @@ import React from 'react'
 import styles from '../styles/Home.module.css'
 import Head from 'next/head'
 import Link from 'next/link'
-import { useEffect,useState } from 'react'
+import { useState } from 'react'
 
-export default function Blog() {
-  const [blog, setblog] = useState([])
-  useEffect(()=>{
-    const url = "http://localhost:3000/api/blogs";
-    fetch(url).then(response => response.json()).then(data => setblog(data));
-  },[])
+export default function Blog(props) {
+  const [blog, setblog] = useState(props.data)
   return (
     <div>
          <Head>
@@ -34,4 +30,13 @@ export default function Blog() {
       </main>
     </div>
   )
+}
+
+export async function getServerSideProps(context) {
+  const url = "http://localhost:3000/api/blogs";
+  let response = await fetch(url);
+  let data = await response.json();
+  return {
+    props: {data}
+  }
 }

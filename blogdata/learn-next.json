@@ -1,6 +1,6 @@
 {
     "title":"Learn Next js with hunting coder",
-    "description":"Next.js is an open-source web development framework built on top of Node.js enabling React-based web applications functionalities such as server-side rendering and generating static websites. React documentation mentions Next.js among  advising it to developers as a solution when Where traditional React apps can only render their content in the client-side browser, Next.js extends this functionality to include applications rendered on the server-side.",
+    "description":"<strong>Next.js</strong> is an open-source web development framework built on top of Node.js enabling React-based web applications functionalities such as server-side rendering and generating static websites. React documentation mentions Next.js among  advising it to developers as a solution when Where traditional React apps can only render their content in the client-side browser, Next.js extends this functionality to include applications rendered on the server-side.",
     "author":"anukul pandey",
     "slug":"learn-next"
 }

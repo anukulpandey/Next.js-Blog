@@ -13,12 +13,17 @@ export default function slug() {
         setblog(data)
         console.log(data)
       })
-    },[router.isReady])
+    },[router.isReady]);
+
+    function createMarkup(blog) {
+      return {__html: blog};
+    }
+
     return (
       <div className={styles.container}>
     <main className={styles.main}>
         <h3>Title: {blog && blog.title}</h3>
-        <p> {blog && blog.description}</p>
+        <p> {blog && <div dangerouslySetInnerHTML={createMarkup(blog.description)} />}</p>
     </main>
     </div>
   )
