@@ -25,9 +25,9 @@ export default function Home() {
             <p>Find in-depth information about Next.js features and API.</p>
             </a>
             <a  className={styles.card}>
-          <Link href="/blog/learn-next">
-            <h2>Learn Next.js &rarr;</h2></Link>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <Link href="/blog/learn-python">
+            <h2>Learn Python &rarr;</h2></Link>
+            <p>All the information you need to know to learn Python.</p>
             </a>
            
         </div>

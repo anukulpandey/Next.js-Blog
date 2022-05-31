@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Blog.module.css'
 import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -15,15 +15,13 @@ export default function Blog(props) {
       </Head>
 
        <main className={styles.main}>
-        <h1 className={styles.title}>
-         Hunting Coder
-        </h1>
-        <div className={styles.grid}>
+        <div className={styles.mar}>
             {blog.map((elem)=>{
               return  <a key={elem.slug}>
               <Link href={`/blog/${elem.slug}`} >
-                <h2>{elem.title} &rarr;</h2></Link>
-                <p>{elem.description}</p>
+                <h2 className={styles.title}>{elem.title} &rarr;</h2></Link>
+                <p className={styles.para}>{elem.description}</p>
+                <hr/>
                 </a>
             })}
         </div>
